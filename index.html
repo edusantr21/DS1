@@ -10,12 +10,64 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body class="bg-info">
-    <div class="row">
-        <div class="col-12">
-        
+<body>
+    <div class="container mb-1">
+        <div class="row mt-2 pt-3 border rounded border-primary">
+            <div class="col-12 ">
+                <h1 class="text-center">Cálculo de Terreno</h1>
+                <h2 class="text-center">Informe os dados abaixo</h2>
+
+                <div class="col-6 d-flex mx-auto">
+                    <h5 class="tamanho1">Comprimento FRONTAL</h5>
+                    <input class="tamanho1" id="ComprimentoFrontal" type="number" min="1">
+                </div>
+                <div class="col-6 d-flex m-2 mx-auto">
+                    <h5 class="tamanho1">Comprimento LATERAL</h5>
+                    <input class="tamanho1" id="ComprimentoLateral" type="number" min="1">
+                </div>
+                <div class="col-8 m-5 mx-auto">
+                    <div class="text-center">
+                        <button id="btCalculaArea" class="btn btn-primary mx-auto mb-2">Calcula Área</button>
+                    </div>
+                    <h4 id="resultadoArea" class="text-center" type=""></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Area dos componente do calculo de ferraduras -->
+    <div class="container mb-1">
+        <div class="row mt-2 pt-3 border rounded border-primary">
+            <div class="col-12 text-center">
+                <h1 class="text-center">Cálculo de Ferraduras</h1>
+                <h2 class="text-center">Informe os dados abaixo</h2>
+                <div class="col-6 d-flex m-2 mx-auto">
+                    <h5 class="tamanho1">Total de Cavalos</h5>
+                    <input id="totalCavalos" class="tamanho1" type="number" min="1">
+                </div>
+
+                <div class="col-8 m-5 mx-auto">
+                    <div class="text-center">
+                        <button id="btnCalculaFerraduras" class="btn btn-primary mx-auto mb-2">Calcular
+                            Ferraduras</button>
+                    </div>
+                    <h4 id="totalFerraduras" class="text-center" type=""></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mb-3">
+        <div class="row">
+            <div class="col-12 text-center">
+                <a class="Text-center" href="https://github.com/peter-loliveira" target="_blank"><em>Meu github</em></a>
+            </div>
+            <div class="col-12 text-center">
+                <a class="Text-center" href="https://github.com/Peter-loliveira/DS1" target="_blank"><em>Link Deste
+                    Exercício<em></a>
+            </div>
         </div>
     </div>
 
