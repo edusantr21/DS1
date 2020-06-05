@@ -1,0 +1,31 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package fatorial;
+
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author Eduardo Santos
+ */
+public class Fatorial {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+      int A = CalcFat(10);
+        System.out.println(A);
+
+}
+   static int CalcFat(int Seila) {
+        for (int i = Seila - 1;i > 1;i--){
+            Seila = Seila * i; 
+        } 
+	return Seila; 
+    }  
+}
+
